@@ -58,6 +58,8 @@ canvas{
 	align-items: center;
 	align-self: center;
 	width: 1500px;
+	position: absolute;
+	top:300; left:0; right:0; bottom:0;
 }
 
 #valentines_text, #rewind_text, #replay_text{
