@@ -636,7 +636,7 @@ window.onload = function(){
 			}else if(STAGE==2){
 
 				rewindLevel.playbackFrame(rewindFrame);
-				rewindFrame--;
+				rewindFrame-=3;
 				if(rewindFrame<0){
 					CURRENT_LEVEL--;
 					if(CURRENT_LEVEL>=0){
@@ -883,7 +883,7 @@ window.LEVEL_CONFIG = [
 			{x:0,y:250,radius:50},
 			{x:200,y:250,radius:50}
 		],
-		countdown: 130
+		countdown: 90
 	}, 
 	
 	{
