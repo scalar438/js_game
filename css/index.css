@@ -48,6 +48,12 @@ canvas{
 	align-self: center;
 }
 
+#yulia
+{
+	align-items: center;
+	align-self: center;
+}
+
 #valentines_text, #rewind_text, #replay_text{
 	display: none;
 	position: absolute;
@@ -68,21 +74,8 @@ canvas{
 #rewind_text, #replay_text{
 	color: #ccc;
 	letter-spacing: 2px;
-	/*text-align: left;*/
 }
-#end_container{
-	width: 800px;
-	height: 550px;
-	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	font-size: 25px;
 
-	text-align: center;
-}
 #support{
 	font-size: 30px;
 	color:#fff;
@@ -108,38 +101,7 @@ canvas{
 	background: #ffce87;
 	top: -3px;
 }
-input#your_message{
-	display: block;
-	width: 100%;
-	font-size: 30px;
-	padding: 5px;
-	border: 2px solid #ddd;
-	margin: 5px 0 40px 0;
 
-	color: #666;
-	padding-top: 8px;
-
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 100;
-
-	text-align: center;
-}
-input#your_link{
-	display: block;
-	width: 100%;
-	font-size: 15px;
-	padding: 5px;
-	background: #ddd;
-	border:none;
-	margin: 5px 0 40px 0;
-
-	color: #666;
-
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 100;
-
-	text-align: center;
-}
 #share{
 	width:330px;
 	margin:5px auto;
@@ -160,7 +122,6 @@ input#your_link{
 	-moz-transition: all 0.1s ease-out;
 	-ms-transition: all 0.1s ease-out;
 	transition: all 0.1s ease-out;
-
 }
 #share > div:hover{
 	opacity: 0.7;

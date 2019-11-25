@@ -712,8 +712,12 @@ function next(){
 		CURRENT_LEVEL = 2;
 		startRewind();
 
-
-		var totalFrames = levelObjects[0].frames.length + levelObjects[1].frames.length + levelObjects[2].frames.length;
+		var sum = 0;
+		for(lev in levelObjects)
+		{
+			sum += lev.frames.length;
+		}
+		var totalFrames = sum;
 		var totalRewindTime = totalFrames/60;
 		var extraTime = 6600 - totalRewindTime*1000;
 		if(extraTime<0){
@@ -733,7 +737,7 @@ function iHeartYou(){
 		levelObjects[i].onlyPath();
 	}
 
-	document.getElementById("canvas_container").style.backgroundPosition = "0px -390px";
+	document.getElementById("canvas_container").style.backgroundPosition = "0px -100px";
 	document.getElementById("screen_two").style.background = "#000";
 
 	setTimeout(function(){
@@ -864,6 +868,34 @@ window.LEVEL_CONFIG = [
 			{x:150,y:150,radius:115}
 		],
 		countdown: 130
+	},
+
+	{
+		canvas:document.getElementById("canvas_l"),
+		player:{ x:30, y: 50},
+		door:{ x:150, y:275 },
+		key:{ x:30, y:275 },
+		circles: [
+			{x:100,y:50,radius:60},
+			{x:100,y:150,radius:60},
+			{x:100,y:227, radius: 30}
+		],
+		countdown: 130
+	},
+
+	{
+		canvas:document.getElementById("canvas_i"),
+		player:{ x:100, y:175 },
+		door:{ x:100, y:275 },
+		key:{ x:100, y:75 },
+		circles: [
+			{x:0,y:150,radius:50},
+			{x:200,y:150,radius:50},
+			{x:0,y:50,radius:50},
+			{x:200,y:50,radius:50},
+			{x:0,y:250,radius:50},
+			{x:200,y:250,radius:50}
+		],
 	}
 
 ];
