@@ -735,16 +735,6 @@ function iHeartYou(){
 
 	document.getElementById("canvas_container").style.backgroundPosition = "0px -390px";
 	document.getElementById("screen_two").style.background = "#000";
-	
-	var can_cont_text = document.getElementById("canvas_container_text");
-
-	var vtext = document.getElementById("valentines_text");
-	vtext.style.display = "block";
-	if(window.location.hash){
-		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
-	}else{
-		vtext.textContent = "a lovely message from me to you <3";
-	}
 
 	setTimeout(function(){
 		vtext.style.letterSpacing = "3px";
@@ -848,9 +838,25 @@ window.LEVEL_CONFIG = [
 		countdown: 200
 	},
 
-	// U
 	{
-		canvas:document.getElementById("canvas_3"),
+		canvas:document.getElementById("canvas_y"),
+		player:{ x:30, y:50 },
+		door:{ x:150, y:270 },
+		key:{ x:270, y:50 },
+		circles: [
+			{x:0,   y:300, radius:145},
+			{x:300, y:300, radius:145},
+			{x:150, y:20,  radius:100},
+			{x:0,   y:100, radius:50},
+			{x:300, y:100, radius: 50},
+			{x: 180, y: 175, radius: 25},
+			{x: 198, y: 193, radius: 25, invisible: true}
+		],
+		countdown: 160
+	},
+
+	{
+		canvas:document.getElementById("canvas_u"),
 		player:{ x:30, y:75 },
 		door:{ x:270, y:75 },
 		key:{ x:150, y:270 },

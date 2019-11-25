@@ -33,18 +33,19 @@ canvas{
 #screen_two{
 	background:#333;
 }
-#screen_three{
-	background:#fff;
 
-}
 #canvas_container{
 	width:940px;
 	height:380px;
 	position: absolute;
 	margin:auto;
 	top:0; left:0; right:0; bottom:0;
-	background-image: url(levels_bg.png);
 	background-repeat: no-repeat;
+}
+
+#i_heart
+{
+	align-self: center;
 }
 
 #valentines_text, #rewind_text, #replay_text{
