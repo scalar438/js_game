@@ -82,32 +82,6 @@ canvas{
 	letter-spacing: 2px;
 }
 
-#support{
-	font-size: 30px;
-	color:#fff;
-	background:#ff7f29;
-	padding: 10px;
-	width:320px;
-	border-radius: 10px;
-	margin: 10px auto;
-	cursor: pointer;
-
-	position: relative;
-	top: 0px;
-
-	text-decoration: none;
-	
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition: all 0.1s ease-out;
-	-ms-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-
-}
-#support:hover{
-	background: #ffce87;
-	top: -3px;
-}
-
 #share{
 	width:330px;
 	margin:5px auto;

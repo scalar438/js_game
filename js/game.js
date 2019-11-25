@@ -613,7 +613,7 @@ window.onload = function(){
 			if(STAGE==3 && !window.HAS_PLAYED_JAZZ){
 
 				if(STAGE==3 && CURRENT_LEVEL==1){
-					var framesLeft = (rewindLevel.frames.length-rewindFrame) + levelObjects[2].frames.length;
+					var framesLeft = (rewindLevel.frames.length-rewindFrame) + levelObjects[6].frames.length;
 					if(framesLeft<135){
 						window.HAS_PLAYED_JAZZ = true;
 						createjs.Sound.play("jazz");
@@ -658,7 +658,7 @@ window.onload = function(){
 				rewindFrame++;
 				if(rewindFrame>=rewindLevel.frames.length){
 					CURRENT_LEVEL++;
-					if(CURRENT_LEVEL<3){
+					if(CURRENT_LEVEL<7){
 						startPlayback();
 					}else{
 
@@ -709,7 +709,7 @@ function next(){
 	}else{
 		level = null;
 		STAGE = 2;
-		CURRENT_LEVEL = 2;
+		CURRENT_LEVEL = 6;
 		startRewind();
 
 		var sum = 0;
@@ -727,7 +727,6 @@ function next(){
 		}
 
 		document.getElementById("rewind_text").style.display = 'block';
-
 	}
 }
 
