@@ -7,10 +7,7 @@ body{
 	overflow: hidden;
 
 }
-canvas{
-	float:left;
-	margin-right: 20px;
-}
+
 #whole_container{
 	position: absolute;
 	width: 100%; height: 100%;
@@ -49,6 +46,8 @@ canvas{
 #i_heart
 {
 	align-self: center;
+	align-items: center;
+	align-content: center;
 	width: 650px;
 	height: 400px;
 	float: bottom;
