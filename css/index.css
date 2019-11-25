@@ -35,23 +35,29 @@ canvas{
 }
 
 #canvas_container{
-	width:940px;
+	width:100%;
 	height:380px;
 	position: absolute;
 	margin:auto;
 	top:0; left:0; right:0; bottom:0;
 	background-repeat: no-repeat;
+	align-self: center;
+	align-content: center;
+	align-items: center;
 }
 
 #i_heart
 {
 	align-self: center;
+	width: 650px;
+	float: bottom;
 }
 
 #yulia
 {
 	align-items: center;
 	align-self: center;
+	width: 1500px;
 }
 
 #valentines_text, #rewind_text, #replay_text{

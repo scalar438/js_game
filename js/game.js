@@ -737,7 +737,6 @@ function iHeartYou(){
 		levelObjects[i].onlyPath();
 	}
 
-	document.getElementById("canvas_container").style.backgroundPosition = "0px -100px";
 	document.getElementById("screen_two").style.background = "#000";
 
 	setTimeout(function(){
@@ -773,17 +772,6 @@ function reset(){
 
 // Simple XOR encryption (key = 1)
 // The only purpose is to obscure it in the hash
-
-function encryptString(string){
-	var result = "";
-	for(var i=0;i<string.length;i++){
-		result += String.fromCharCode(string.charCodeAt(i)^1);
-	}
-	return result;
-}
-function decryptString(string){
-	return encryptString(string); // it's XOR, duh
-}
 
 var yourMessage = document.getElementById("your_message");
 
@@ -896,7 +884,46 @@ window.LEVEL_CONFIG = [
 			{x:0,y:250,radius:50},
 			{x:200,y:250,radius:50}
 		],
-	}
+		countdown: 130
+	}, 
+	
+	{
+		canvas:document.getElementById("canvas_a"),
+		player:{ x:160, y:80 },
+		door:{ x:285, y:275 },
+		key:{ x:260, y:20 },
+		circles: [
+			// hook
+			{x:260, y:200, radius: 25},
+			{x:280, y:180, radius: 25},
+
+			{x:130, y:140, radius: 100},
+			{x:210, y: 20, radius: 25},
+			{x:210, y: 60, radius: 25},
+			{x:210, y: 0, radius: 25},
+			// Key-stopper
+			{x:280, y: 0, radius: 22},
+			{x:240, y: 0, radius: 22},
+
+			// Left wall
+			{x: 290, y: 0, radius: 15, invisible: true},
+			{x: 290, y: 25, radius: 15, invisible: true},
+			{x: 290, y: 50, radius: 15, invisible: true},
+			{x: 290, y: 75, radius: 15, invisible: true},
+			{x: 290, y: 100, radius: 15, invisible: true},
+			{x: 290, y: 125, radius: 15, invisible: true},
+			{x: 290, y: 150, radius: 15, invisible: true},
+			{x: 290, y: 175, radius: 15, invisible: true},
+			{x: 290, y: 200, radius: 15, invisible: true},
+			{x: 290, y: 225, radius: 15, invisible: true},
+
+			// Corners
+			{x: 0, y:300, radius: 50},
+			{x: 0, y: 0, radius: 40},
+			{x:300, y: 300, radius: 20}
+		],
+		countdown: 300
+	},
 
 ];
 
