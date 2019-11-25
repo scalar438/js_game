@@ -843,7 +843,7 @@ window.LEVEL_CONFIG = [
 			{x: 180, y: 175, radius: 25},
 			{x: 198, y: 193, radius: 25, invisible: true}
 		],
-		countdown: 160
+		countdown: 140
 	},
 
 	{
@@ -921,7 +921,7 @@ window.LEVEL_CONFIG = [
 			{x: 0, y: 0, radius: 40},
 			{x:300, y: 300, radius: 20}
 		],
-		countdown: 300
+		countdown: 250
 	},
 
 ];
