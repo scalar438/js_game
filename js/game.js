@@ -802,7 +802,7 @@ window.LEVEL_CONFIG = [
 
 	// I
 	{
-		canvas:document.getElementById("canvas_1"),
+		canvas:document.getElementById("canvas_me"),
 		player:{ x:150, y:175 },
 		door:{ x:150, y:75 },
 		key:{ x:150, y:275 },
@@ -815,7 +815,7 @@ window.LEVEL_CONFIG = [
 
 	// HEART
 	{
-		canvas:document.getElementById("canvas_2"),
+		canvas:document.getElementById("canvas_love"),
 		player:{ x:150, y:250 },
 		door:{ x:150, y:249 },
 		key:{ x:150, y:75 },
